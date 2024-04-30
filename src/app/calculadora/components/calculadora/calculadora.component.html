@@ -1,0 +1,32 @@
+<div class="calculadora">
+  <input type="text" id="display" [value]="display" disabled>
+  <div class="teclas">
+    <button id="ac" (click)="clearDisplay()">AC</button>
+    <button id="de" (click)="deleteLastDigit()">DE</button>
+    <button class="operador" (click)="appendToDisplay('.')">.</button>
+    <button class="operador" (click)="appendToDisplay('/')">/</button>
+
+    <button id="7"  (click)="appendToDisplay('7')">7</button>
+    <button id="8"  (click)="appendToDisplay('8')">8</button>
+    <button id="9"  (click)="appendToDisplay('9')">9</button>
+    <button class="operador"  (click)="appendToDisplay('*')">*</button>
+
+    <button id="4"  (click)="appendToDisplay('4')">4</button>
+    <button id="5"  (click)="appendToDisplay('5')">5</button>
+    <button id="6"  (click)="appendToDisplay('6')">6</button>
+    <button class="operador"  (click)="appendToDisplay('-')">-</button>
+
+    <button id="1"  (click)="appendToDisplay('1')">1</button>
+    <button id="2"  (click)="appendToDisplay('2')">2</button>
+    <button id="3"  (click)="appendToDisplay('3')">3</button>
+    <button class="operador"  (click)="appendToDisplay('+')">+</button>
+
+    <button id="00"  (click)="appendToDisplay('00')">00</button>
+    <button id="0"  (click)="appendToDisplay('0')">0</button>
+    <button id="igual"  (click)="calculate()">=</button>
+  </div>
+</div>
+
+<br>
+
+

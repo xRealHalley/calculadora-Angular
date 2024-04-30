@@ -1,0 +1,10 @@
+<div id="historial">
+  <h2>Historial de Operaciones</h2>
+  <ul>
+    <li *ngFor="let operation of historyList">{{ operation }}</li>
+  </ul>
+  <div id="botonBorrar">
+    <button id="borrarHistorial" (click)="borrarHistorial()">Borrar</button>
+  </div>
+</div>
+
